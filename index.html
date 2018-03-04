@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Your tasks for today</title>
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="flex-container">
+		<div class="column-new">
+			<h1>Add new task</h1>
+			<div class="input-add">
+				<input type="text" id="task-input" value="" />
+				<i class="far fa-plus-square fa-2x add-task"></i>
+			</div>
+		</div>
+		<div class="column-list">
+		<ul id="list" class="task-list">
+		<script type="text/template" data-template="tasks">
+	        <li class="task"  data-text="{{text}}">
+	            <div class="date">{{date}}</div>
+	            <div class="text"> {{text}}</div>
+	            <div class="task-controls">
+	            	<i class="far fa-trash-alt remove-task"></i>
+	            </div>
+	        </li>
+	    </script>
+		</ul>
+		</div>
+	</div>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>

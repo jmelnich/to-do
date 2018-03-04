@@ -1,0 +1,73 @@
+body {
+    margin: 3em;
+   background: #0f0c29;  /* fallback for old browsers */
+   background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	color: white;
+}
+
+ul{
+  list-style-type: none;
+}
+
+input{
+	padding: 2px 2px;
+    margin: 10px;
+    outline: none;
+    background: rgba(191, 233, 255, 0.1);
+    border: 2px solid white;
+    border-radius: 5px;
+    height: 20px;
+    color: white;
+    font-size: 15px;
+}
+
+.flex-container{
+	display: flex;
+	justify-content: space-between;
+}
+
+.column-new{
+	width: 50%;
+}
+
+.column-list{
+	width: 50%;
+}
+
+.task{
+	position: relative;
+	border: 1px solid white;
+	border-radius: 8px;
+	padding: 15px;
+	margin: 10px;
+	background-color: rgba(191, 233, 255, 0.1);
+}
+
+.text{
+	padding: 10px;
+	font-size: 18px;
+}
+
+.date{
+	font-size: 12px;
+}
+
+.fa-trash-alt{
+	position: absolute;
+	right: 20px;
+	bottom: 10px;
+}
+
+.input-add{
+	position: relative;
+}
+.fa-plus-square:before{
+	position: absolute;
+	top: 7px;
+}
+
+p{
+	margin-top: 10px;
+	color: white;
+}
