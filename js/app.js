@@ -27,6 +27,11 @@ $(function() {
 	// init function that grab btn and call octopus.addTask()
 		init: function() {
 			const addTaskBtn = $('.add-task');
+			$("#add").keyup(function(event) {
+    			if (event.keyCode === 13){
+    				addTaskBtn.click();
+    			}
+    		});
 			addTaskBtn.click(function() {
 			let inputFiledVal = $('#task-input').val();
 				if (inputFiledVal == ""){
