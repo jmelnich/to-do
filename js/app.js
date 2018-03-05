@@ -1,7 +1,12 @@
 $(function() {
+	//check if I have smth in localStorage.
+	let storedData = localStorage.getItem("list_data_key");
 	let data = {
 		tasks: []
 	};
+	if (storedData) {
+	    data.tasks = JSON.parse(storedData);
+	}
 
 	let octopus = {
 		//addTask function that push new obj to model push it as an object
@@ -12,6 +17,8 @@ $(function() {
 				text
 			})
 			view.render();
+			localStorage.setItem("list_data_key",  JSON.stringify(data.tasks));
+			console.log(localStorage.list_data_key);
 		},
 		getActiveTask: function() {
 			let activeTasks = data.tasks;
@@ -65,5 +72,6 @@ $(function() {
 		}
 	};
 	view.init();
+	view.render();
 }());
 
