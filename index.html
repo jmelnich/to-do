@@ -6,20 +6,23 @@
 	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	 <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
 </head>
 <body>
 	<div class="flex-container">
 		<div class="column-new">
 			<h1>Add new task</h1>
 			<div id="add" class="input-add">
-				<input type="text" id="task-input" value="" />
+				<input type="text" id="task-input" value=""/>
 				<i class="far fa-plus-square fa-2x add-task"></i>
 			</div>
 		</div>
 		<div class="column-list">
-		<ul id="list" class="task-list">
+		<ul id="sortable" class="task-list">
 		<script type="text/template" data-template="tasks">
-	        <li class="task"  data-text="{{text}}">
+	        <li class="task" id="{{id}}">
 	            <div class="date">{{date}}</div>
 	            <div class="text"> {{text}}</div>
 	            <div class="task-controls">
@@ -30,7 +33,41 @@
 		</ul>
 		</div>
 	</div>
-	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/app.js"></script>
+	<script>
+  $( function() {
+    $( "#sortable" ).sortable();
+    $( "#sortable" ).disableSelection();
+  } );
+  </script>
 </body>
 </html>
+
+<!-- <html>
+   <head>
+      <title>jQuery UI Sortable - Example</title>
+
+      <script src = "js/jquery-3.3.1.min.js"></script>
+      <script src="js/jquery-ui.min.js"></script>
+
+
+      <script>
+         $( function() {
+    $( "#sortable" ).sortable();
+    $( "#sortable" ).disableSelection();
+  } );
+      </script>
+
+   </head>
+
+   <body>
+      <ul id = "sortable">
+         <li >Product 1</li>
+         <li>Product 2</li>
+         <li>Product 3</li>
+         <li  >Product 4</li>
+      </ul>
+      <br>
+
+   </body>
+</html> -->

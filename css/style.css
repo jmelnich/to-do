@@ -10,6 +10,10 @@ ul{
   list-style-type: none;
 }
 
+li{
+	cursor: move;
+}
+
 input{
 	padding: 2px 2px;
     margin: 10px;
@@ -57,6 +61,7 @@ input{
 	position: absolute;
 	right: 20px;
 	bottom: 10px;
+	cursor: pointer;
 }
 
 .input-add{
