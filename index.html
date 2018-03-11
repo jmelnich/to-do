@@ -11,15 +11,21 @@
 
 </head>
 <body>
-	<div class="flex-container">
+	<div class="flex-container-start">
+		<img src="img/whale.png" alt="whale" height="81" width="150">
+		<h1>Whallie: your task helper</h1>
+	</div>
+	 <hr>
+	<div class="flex-container-between">
 		<div class="column-new">
-			<h1>Add new task</h1>
+			<h2>Add new task</h2>
 			<div id="add" class="input-add">
 				<input type="text" id="task-input" value=""/>
 				<i class="far fa-plus-square fa-2x add-task"></i>
 			</div>
 		</div>
 		<div class="column-list">
+		<h2 class="center">Your tasks</h2>
 		<ul id="sortable" class="task-list">
 		<script type="text/template" data-template="tasks">
 	        <li class="task" id="{{id}}">

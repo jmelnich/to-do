@@ -26,9 +26,15 @@ input{
     font-size: 15px;
 }
 
-.flex-container{
+.flex-container-between{
 	display: flex;
 	justify-content: space-between;
+}
+
+.flex-container-start{
+	display: flex;
+	justify-content: space-start;
+	margin-bottom: 20px;
 }
 
 .column-new{
@@ -76,3 +82,13 @@ p{
 	margin-top: 10px;
 	color: white;
 }
+
+h1{
+	padding-left: 50px;
+}
+
+.center{
+	text-align: center;
+}
+
+
