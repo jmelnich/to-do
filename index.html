@@ -5,14 +5,26 @@
 	<title>Your tasks for today</title>
 	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	 <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css">
-	<script src="js/jquery-3.3.1.min.js"></script>
+	<link rel="stylesheet" href="pro/mincss/style.min.css">
+	<script src="pro/js/jquery-3.3.1.min.js"></script>
 	<script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 
 </head>
 <body>
 	<div class="flex-container-start">
-		<img src="img/whale.png" alt="whale" height="81" width="150">
+		<div class="img-container">
+			<div class="wrapper">
+				<div class="whale_body">
+			    <div class="whale_mouth"></div>
+			    <div class="whale_eye"></div>
+				</div>
+				<div class="white_tail_1"></div>
+				<div class="white_tail_2"></div>
+				<div class="whale_tail_split_1"></div>
+				<div class="whale_tail_split_2"></div>
+			</div>
+		</div>
+	<div class="whale_fin"></div>
 		<h1>Whallie: your task helper</h1>
 	</div>
 	 <hr>
@@ -39,7 +51,7 @@
 		</ul>
 		</div>
 	</div>
-	<script src="js/app.js"></script>
+	<script src="app/js/app.js"></script>
 	<script>
   $( function() {
     $( "#sortable" ).sortable();
@@ -48,32 +60,3 @@
   </script>
 </body>
 </html>
-
-<!-- <html>
-   <head>
-      <title>jQuery UI Sortable - Example</title>
-
-      <script src = "js/jquery-3.3.1.min.js"></script>
-      <script src="js/jquery-ui.min.js"></script>
-
-
-      <script>
-         $( function() {
-    $( "#sortable" ).sortable();
-    $( "#sortable" ).disableSelection();
-  } );
-      </script>
-
-   </head>
-
-   <body>
-      <ul id = "sortable">
-         <li >Product 1</li>
-         <li>Product 2</li>
-         <li>Product 3</li>
-         <li  >Product 4</li>
-      </ul>
-      <br>
-
-   </body>
-</html> -->

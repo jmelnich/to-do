@@ -1,0 +1,167 @@
+.img-container{
+  position: relative;
+  width: 300px;
+  height: 100px;
+
+}
+
+.wrapper {
+  position:fixed;
+  z-index:2;
+  width: 300px;
+  height: 100px;
+  //margin-top: 60px;
+  overflow: hidden;
+  -webkit-animation: float 3s linear infinite;
+  -moz-animation: float 3s linear infinite;
+  animation: float 3s linear infinite;
+  .whale_body {
+    border-radius: 250px 80px 10px 10px;
+    background: white;
+    height: 100px;
+    width: 160px;
+    float: right;
+    position: relative;
+    .whale_mouth {
+      width: 80px;
+      height: 4px;
+      background: lightgrey;
+      position: absolute;
+      right: 0;
+      bottom: 10px;
+      border-radius: 10px 0px 0 10px;
+    }
+    .whale_eye {
+      width: 7px;
+      height: 7px;
+      background: lightgrey;
+      position: absolute;
+      right: 70px;
+      top: 70px;
+      border-radius: 100%;
+    }
+  }
+  .whale_tail_split_1, .whale_tail_split_2 {
+    width: 65px;
+    height: 30px;
+    background: darkgrey;
+    margin-left: 60px;
+    -webkit-transform: rotate(-80deg);
+    border-radius: 30px 0 30px 0px;
+    position: absolute;
+    bottom: 10px;
+    left: 0px;
+     -webkit-animation:spin-less 3s linear infinite;
+  -moz-animation:spin-less 3s linear infinite;
+  animation:spin-less 3s linear infinite;
+  }
+  .whale_tail_split_2 {
+    /* -webkit-transform: scaleX(-1); */
+    -webkit-transform: rotate(25deg);
+    background: white;
+    left: -11px;
+    border-radius: 0 30px 0 30px;
+    bottom: 0px;
+    -webkit-animation:spin 3s linear infinite;
+    -moz-animation:spin 3s linear infinite;
+    animation:spin 3s linear infinite;
+  }
+}
+
+.whale_fin {
+  width: 30px;
+  height: 20px;
+  background: white;
+  -webkit-transform: rotate(-110deg);
+  border-radius: 30px 0 30px 0;
+  position: absolute;
+  top: 138px;
+  left: 190px;
+  /*-webkit-animation:fin-spin 4s linear infinite;
+  -moz-animation:fin-spin 4s linear infinite;
+  animation:fin-spin 4s linear infinite;*/
+  // -webkit-animation: fin-float 3s linear infinite;
+  // -moz-animation: fin-float 3s linear infinite;
+  // animation: fin-float 3s linear infinite;
+}
+.white_tail_1, .white_tail_2 {
+  width: 60px;
+  height: 7px;
+  background: white;
+  -webkit-transform: rotate(0deg);
+  position: absolute;
+  bottom: 0;
+  left: 90px;
+  border-radius: 0 0 0 60px;
+}
+
+.white_tail_2 {
+  -webkit-transform: rotate(-34deg);
+  height: 30px;
+  left: 104px;
+}
+
+/* CSS ANIMATIONS */
+ @-moz-keyframes spin { 50% {
+    -moz-transform: rotate(10deg);
+    }
+  }
+  @-webkit-keyframes spin { 50% {
+    -webkit-transform: rotate(10deg);
+    }
+  }
+  @keyframes spin { 50% {
+    -webkit-transform: rotate(10deg);
+    transform:rotate(10deg);
+    }
+  }
+  @-moz-keyframes spin-less { 50% {
+    -moz-transform: rotate(-95deg);
+    }
+  }
+  @-webkit-keyframes spin-less { 50% {
+    -webkit-transform: rotate(-95deg);
+    }
+  }
+  @keyframes spin-less { 50% {
+    -webkit-transform: rotate(-95deg);
+    transform:rotate(-95deg);
+    }
+  }
+  /*@-moz-keyframes fin-spin { 50% {
+    -moz-transform: rotate(-100deg);
+    }
+  }
+  @-webkit-keyframes fin-spin { 50% {
+    -webkit-transform: rotate(-100deg);
+    }
+  }
+  @keyframes fin-spin { 50% {
+    -webkit-transform: rotate(-100deg);
+    transform:rotate(-100deg);
+    }
+  }*/
+  // @-moz-keyframes float { 50% {
+  //   margin-top: 50px;
+  //   }
+  // }
+  // @-webkit-keyframes float { 50% {
+  //   margin-top: 50px;
+  //   }
+  // }
+  // @keyframes float { 50% {
+  //   margin-top: 50px;
+  //   }
+  // }
+  // @-moz-keyframes fin-float { 50% {
+  //   top: 148px;
+  //   }
+  // }
+  // @-webkit-keyframes fin-float { 50% {
+  //   top: 148px;
+  //   }
+  // }
+  // @keyframes fin-float { 50% {
+  //   top: 148px;
+  //   }
+  // }
