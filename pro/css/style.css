@@ -40,13 +40,8 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.img-container {
-  position: relative;
-  width: 300px;
-  height: 100px; }
-
 .wrapper {
-  position: fixed;
+  position: relative;
   z-index: 2;
   width: 300px;
   height: 100px;
@@ -169,7 +164,23 @@ body {
   /* fallback for old browsers */
   background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  color: white; }
+  color: white;
+  font-family: "Raleway", sans-serif; }
+
+h1, h2 {
+  font-family: "Satisfy", cursive; }
+
+p {
+  margin-top: 10px; }
+
+h1 {
+  font-size: 60px;
+  padding-left: 50px;
+  padding-top: 40px; }
+
+h2 {
+  font-size: 30px;
+  padding-bottom: 12px; }
 
 li {
   cursor: move; }
@@ -195,12 +206,18 @@ input {
   margin-bottom: 20px; }
 
 .column-new {
-  width: 50%; }
+  width: 30%; }
 
 .column-list {
-  width: 50%; }
+  width: 70%; }
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 .task {
+  width: 280px;
   position: relative;
   border: 1px solid white;
   border-radius: 8px;
@@ -210,7 +227,7 @@ input {
 
 .text {
   padding: 10px;
-  font-size: 18px; }
+  font-size: 16px; }
 
 .date {
   font-size: 12px; }
@@ -227,17 +244,6 @@ input {
 .fa-plus-square:before {
   position: absolute;
   top: 7px; }
-
-p {
-  margin-top: 10px;
-  color: white; }
-
-h1 {
-  font-size: 30px;
-  padding-left: 50px; }
-
-h2 {
-  font-size: 20px; }
 
 .center {
   text-align: center; }
